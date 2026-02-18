@@ -1,15 +1,28 @@
 public class Main {
     public static void main(String[] args) {
-        int a1 = 10, a2 = 2, a3 = 5, a4 = 8, a5 = 12, a6 = 3, a7 = 7, a8 = 1, a9 = 4, a10 = 6;
+        int[] numbers = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
 
-        int sum = a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10;
-        int diff = a1 - a2 - a3 - a4 - a5 - a6 - a7 - a8 - a9 - a10;
-        int mult = a1 * a2 * a3;
-        int div = a1 / a2;
+        int sum = 0;
+        int diff = numbers[0];
+        long mult = 1;
+        double div = numbers[0];
 
-        System.out.println("Сума: " + sum);
-        System.out.println("Різниця: " + diff);
-        System.out.println("Добуток (перших трьох): " + mult);
-        System.out.println("Частка (a1/a2): " + div);
+
+        for (int i = 0; i < numbers.length; i++) {
+            sum += numbers[i];
+
+            if (i > 0) {
+                diff -= numbers[i];
+                div /= numbers[i];
+            }
+
+            mult *= numbers[i];
+        }
+
+        System.out.println("--- Результати обчислень ---");
+        System.out.println("Сума всіх елементів: " + sum);
+        System.out.println("Різниця всіх елементів: " + diff);
+        System.out.println("Добуток всіх елементів: " + mult);
+        System.out.printf("Результат послідовного ділення: %.10f\n", div);
     }
 }
