@@ -23,6 +23,6 @@ public class Main {
         System.out.println("Сума всіх елементів: " + sum);
         System.out.println("Різниця всіх елементів: " + diff);
         System.out.println("Добуток всіх елементів: " + mult);
-        System.out.printf("Результат послідовного ділення: %.10f\n", div);
+        System.out.printf("Результат послідовного ділення: %.5f\n", div);
     }
 }

@@ -1,6 +1,6 @@
 public class class5 {
         public static void main(String[] args) {
-            int number = 123; //
+            int number = 412; //
 
             int last = number % 10;
             int middle = (number / 10) % 10;
