@@ -1,0 +1,22 @@
+public class Driver {
+    private String name;
+    private int age;
+    private int experience;
+
+    public Driver(String name, int age, int experience) {
+        this.name = name;
+        this.age = age;
+        this.experience = experience;
+    }
+
+    // Геттери та сеттери
+    public String getName() { return name; }
+    public int getAge() { return age; }
+    public int getExperience() { return experience; }
+    public void setExperience(int experience) { this.experience = experience; }
+
+    @Override
+    public String toString() {
+        return "Водій: " + name + ", Вік: " + age + ", Стаж: " + experience + "р.";
+    }
+}
